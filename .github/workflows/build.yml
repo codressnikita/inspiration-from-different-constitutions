@@ -40,7 +40,7 @@ jobs:
 
       - name: Install Rust
         run: |
-          if [ "$RUNNER_OS" = "macOS" ]; then
+          if [[ "$RUNNER_OS" == "macOS" ]]; then
             curl https://sh.rustup.rs -sSf | sh -s -- -y
             echo "$HOME/.cargo/bin" >> $GITHUB_PATH  # Add cargo to PATH
           else
@@ -48,7 +48,7 @@ jobs:
           fi
           rustup toolchain install stable
           rustup default stable
-        shell: bash  # Use bash explicitly
+        shell: bash  # Ensure to use bash explicitly on macOS
 
       - name: Cache cargo
         uses: actions/cache@v3
