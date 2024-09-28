@@ -56,11 +56,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cargo
 
-      - name: Install Tauri CLI
-        run: npx tauri install
+      - name: Install Tauri CLI Dependencies
+        run: npm install @tauri-apps/cli @tauri-apps/api
 
       - name: Build the App
-        run: npm run tauri -- build
+        run: npm run tauri build
 
       - name: Upload Artifacts
         if: success()
