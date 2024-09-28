@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  tauri-build-windows:
+  tauri-build:
     runs-on: windows-latest
 
     steps:
@@ -36,8 +36,7 @@ jobs:
 
       - name: Install Rust
         run: |
-          Invoke-WebRequest -Uri https://sh.rustup.rs -OutFile rustup-init.exe
-          Start-Process -FilePath rustup-init.exe -ArgumentList "-y" -Wait
+          iex "& { $(iwr https://sh.rustup.rs -UseBasicP | Out-String) } -y"
           rustup toolchain install stable
           rustup default stable
         shell: pwsh  # Use PowerShell explicitly
