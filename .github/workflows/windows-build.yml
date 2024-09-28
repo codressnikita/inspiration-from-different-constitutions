@@ -1,4 +1,4 @@
-name: Build Tauri App
+name: Windows Build Tauri App
 
 on:
   push:
@@ -10,11 +10,7 @@ on:
 
 jobs:
   tauri-build:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [macos-latest, windows-latest]  # Only macOS and Windows
+    runs-on: windows-latest
 
     steps:
       - name: Checkout Code
@@ -40,25 +36,9 @@ jobs:
 
       - name: Install Rust
         run: |
-          if [[ "$RUNNER_OS" == "macOS" ]]; then
-            curl https://sh.rustup.rs -sSf | sh -s -- -y
-            echo "$HOME/.cargo/bin" >> $GITHUB_PATH  # Add cargo to PATH
-          else
-            curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | cmd /c "rustup-init.exe -y"
-          fi
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | cmd /c "rustup-init.exe -y"
           rustup toolchain install stable
           rustup default stable
-        shell: bash  # Ensure to use bash explicitly on macOS
-
-      - name: Cache cargo
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cargo
-            target
-          key: ${{ runner.os }}-cargo-${{ hashFiles('Cargo.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-cargo
 
       - name: Install Tauri CLI Dependencies
         run: npm install @tauri-apps/cli @tauri-apps/api
@@ -70,5 +50,5 @@ jobs:
         if: success()
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ matrix.os }}-release
+          name: windows-release
           path: src-tauri/target/release/bundle/
