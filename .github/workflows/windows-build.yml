@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  tauri-build:
+  tauri-build-windows:
     runs-on: windows-latest
 
     steps:
@@ -36,9 +36,11 @@ jobs:
 
       - name: Install Rust
         run: |
-          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | cmd /c "rustup-init.exe -y"
+          Invoke-WebRequest -Uri https://sh.rustup.rs -OutFile rustup-init.exe
+          Start-Process -FilePath rustup-init.exe -ArgumentList "-y" -Wait
           rustup toolchain install stable
           rustup default stable
+        shell: pwsh  # Use PowerShell explicitly
 
       - name: Install Tauri CLI Dependencies
         run: npm install @tauri-apps/cli @tauri-apps/api

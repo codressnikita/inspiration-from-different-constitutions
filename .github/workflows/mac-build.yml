@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  tauri-build:
+  tauri-build-mac:
     runs-on: macos-latest
 
     steps:
