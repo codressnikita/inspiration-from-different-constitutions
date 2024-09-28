@@ -57,7 +57,7 @@ jobs:
             ${{ runner.os }}-cargo
 
       - name: Install Tauri CLI
-        run: npm run tauri -- install
+        run: npx tauri install
 
       - name: Build the App
         run: npm run tauri -- build
