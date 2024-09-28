@@ -39,6 +39,7 @@ jobs:
         run: npm ci
 
       - name: Install Rust
+        shell: bash  # Use bash explicitly
         run: |
           if [ "$RUNNER_OS" = "macOS" ]; then
             curl https://sh.rustup.rs -sSf | sh -s -- -y
