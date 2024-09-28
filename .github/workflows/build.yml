@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [macos-latest, windows-latest]
+        os: [macos-latest, windows-latest]  # Only macOS and Windows
 
     steps:
       - name: Checkout Code
@@ -38,11 +38,14 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      # Directly install Rust without using the deprecated action
       - name: Install Rust
         run: |
-          curl https://sh.rustup.rs -sSf | sh -s -- -y
-          source $HOME/.cargo/env
+          if [[ "$RUNNER_OS" == "macOS" ]]; then
+            curl https://sh.rustup.rs -sSf | sh -s -- -y
+            source $HOME/.cargo/env
+          else
+            curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | cmd /c "rustup-init.exe -y"
+          fi
           rustup toolchain install stable
           rustup default stable
 
