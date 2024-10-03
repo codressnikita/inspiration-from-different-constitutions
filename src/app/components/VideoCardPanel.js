@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import VideoCard from './VideoCard';
 
 export default function VideoCardPanel({ handleCardClick }) {
@@ -43,7 +43,7 @@ export default function VideoCardPanel({ handleCardClick }) {
   ];
 
   return (
-    <div className="video-gallery grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
+    <div className='video-gallery grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 p-5'>
       {videos.map((video, index) => (
         <VideoCard key={index} video={video} handleClick={() => handleCardClick(video)} />
       ))}

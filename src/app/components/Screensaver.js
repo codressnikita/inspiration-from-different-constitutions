@@ -46,8 +46,9 @@ const quotes = [
     author: "Amartya Sen",
   },
 ];
+
 const Screensaver = ({
-  idleTimeout = 20000000,
+  idleTimeout = 30000,
   quoteInterval = 5000,
 }) => {
   const [isIdle, setIsIdle] = useState(false);
@@ -56,7 +57,7 @@ const Screensaver = ({
   // Idle detection logic
   useEffect(() => {
     let timeoutId;
-    
+
     const resetTimer = () => {
       setIsIdle(false);
       clearTimeout(timeoutId);
@@ -65,15 +66,15 @@ const Screensaver = ({
 
     window.addEventListener('mousemove', resetTimer);
     window.addEventListener('keydown', resetTimer);
-    
+
     resetTimer();
-    
+
     return () => {
       window.removeEventListener('mousemove', resetTimer);
       window.removeEventListener('keydown', resetTimer);
       clearTimeout(timeoutId);
     };
-  }, []);
+  }, [idleTimeout]);
 
   // Quote rotation logic
   useEffect(() => {
@@ -84,7 +85,7 @@ const Screensaver = ({
 
       return () => clearInterval(quoteTimer); // Cleanup on component unmount or when idle ends
     }
-  }, [isIdle]);
+  }, [isIdle, quoteInterval]);
 
   return (
     <>
@@ -99,11 +100,11 @@ const Screensaver = ({
             muted
             playsInline
           />
-          <Overlay animate/>
+          <Overlay animate />
           <div className="absolute bottom-5 z-20 w-full text-center px-4">
             <div className="bg-blue-500 bg-opacity-0 rounded-lg p-4">
               <p className="text-2xl font-serif italic text-yellow-300 transition-all duration-300 ease-in-out">
-                "{quotes[currentQuoteIndex].text}"
+                &quot;{quotes[currentQuoteIndex].text}&quot; {/* Escape quotes */}
               </p>
               <p className="mt-2 text-xl font-semibold text-gray-200">
                 - {quotes[currentQuoteIndex].author}
