@@ -93,7 +93,7 @@ const Screensaver = ({
           {/* Video background */}
           <video
             className="w-full h-full object-cover"
-            src="/videos/screensaver.mp4"
+            src="/videos/video1.mp4"
             autoPlay
             loop
             muted
