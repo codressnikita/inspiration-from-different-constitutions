@@ -49,7 +49,6 @@ jobs:
         env:
           # Necessary for Tauri to build Windows apps
           RUSTFLAGS: "-C target-feature=+crt-static"
-          TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
 
       - name: Upload Artifacts
         if: success()
