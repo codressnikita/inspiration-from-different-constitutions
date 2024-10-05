@@ -4,7 +4,8 @@ on:
   push:
     tags:
       - "v*" # Trigger workflow only when tags like 'v1.0.0', 'v2.0', etc. are pushed
-
+permissions:
+  contents: write
 jobs:
   tauri-build:
     runs-on: windows-latest
