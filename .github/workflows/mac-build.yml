@@ -6,6 +6,7 @@ on:
       - "v*" # Trigger workflow only when tags like 'v1.0.0', 'v2.0', etc. are pushed
 permissions:
   contents: write
+  releases: write
   packages: write # Needed if you're going to publish packages
 
 jobs:
@@ -88,3 +89,5 @@ jobs:
           asset_path: ./src-tauri/target/release/bundle/dmg/founding-mothers_1.0.3_aarch64.dmg # Path to the dmg file
           asset_name: founding-mothers_1.0.3_aarch64.dmg # You can change this to the desired name for the dmg file
           asset_content_type: application/octet-stream
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
