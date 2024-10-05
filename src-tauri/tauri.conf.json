@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "founding-mothers",
-    "version": "1.0.2"
+    "version": "1.0.3"
   },
   "tauri": {
     "allowlist": {
@@ -57,10 +57,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 800,
         "resizable": true,
         "title": "Founding Mothers",
-        "width": 800
+        "width": 600
       }
     ]
   }
