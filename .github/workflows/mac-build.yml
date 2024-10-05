@@ -69,6 +69,6 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: src-tauri/target/release/bundle/macos/*.dmg
+          asset_path: src-tauri/target/release/bundle/dmg/*.dmg
           asset_name: your-app-name-${{ github.ref }}.dmg
           asset_content_type: application/x-apple-diskimage
