@@ -48,7 +48,7 @@ jobs:
         run: npm run tauri build
 
       - name: Wait for files
-        run: sleep 5s
+        run: sleep 5
 
       - name: List DMG folder
         run: ls -alh src-tauri/target/release/bundle/dmg
