@@ -2,11 +2,8 @@ name: Windows Build Tauri App
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    tags:
+      - "v*" # Trigger workflow only when tags like 'v1.0.0', 'v2.0', etc. are pushed
 
 jobs:
   tauri-build:
@@ -57,3 +54,22 @@ jobs:
           name: windows-release
           path: src-tauri/target/release/bundle/
 
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }} # The tag that triggered the release
+          release_name: Release ${{ github.ref }} # Name of the release
+          draft: false
+          prerelease: false
+
+      - name: Upload EXE to Release
+        if: success()
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: src-tauri/target/release/bundle/windows/*.exe
+          asset_name: your-app-name-${{ github.ref }}.exe
+          asset_content_type: application/octet-stream
