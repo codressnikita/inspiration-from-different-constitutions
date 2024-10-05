@@ -52,12 +52,13 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: macos-release
-          path: src-tauri/target/release/bundle/** # Ensure you're capturing all files in the bundle directory
+          path: |
+            src-tauri/target/release/bundle/dmg/*.dmg  # Upload only .dmg files (adjust this if your app is packaged differently)
+            src-tauri/target/release/bundle/app/*.app  # Upload only .app files (if applicable)
 
       - name: Create Release
         if: success()
-        id: create_release
-        uses: softprops/action-gh-release@v1
+        uses: actions/create-release@v1
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
@@ -69,8 +70,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload Release Assets
-        if: success() && steps.create_release.outputs.upload_url != ''
-        uses: softprops/action-gh-release@v1
+        if: success()
+        uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset: src-tauri/target/release/bundle/** # This uploads all files in the bundle directory
+          asset_path: src-tauri/target/release/bundle/dmg/*.dmg # Path to the dmg file
+          asset_name: app.dmg # You can change this to the desired name for the dmg file
+          asset_content_type: application/octet-stream
