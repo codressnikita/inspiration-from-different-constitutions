@@ -74,6 +74,11 @@ jobs:
           prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: List Current Directory
+        run: pwd
+
+      - name: List DMG Folder
+        run: ls -alh ./src-tauri/target/release/bundle/dmg
 
       - name: Upload Release Assets
         if: success()
