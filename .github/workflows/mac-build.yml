@@ -85,6 +85,6 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # Use the upload_url from the create_release step
-          asset_path: ./src-tauri/target/release/bundle/dmg/*.dmg # Path to the dmg file
-          asset_name: founding_mothers.dmg # You can change this to the desired name for the dmg file
+          asset_path: ./src-tauri/target/release/bundle/dmg/founding-mothers_1.0.3_aarch64.dmg # Path to the dmg file
+          asset_name: founding-mothers_1.0.3_aarch64.dmg # You can change this to the desired name for the dmg file
           asset_content_type: application/octet-stream
