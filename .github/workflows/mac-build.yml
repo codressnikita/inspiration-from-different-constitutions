@@ -47,6 +47,12 @@ jobs:
       - name: Build the App
         run: npm run tauri build
 
+      - name: Wait for files
+        run: sleep 5s
+
+      - name: List DMG folder
+        run: ls -alh src-tauri/target/release/bundle/dmg
+
       - name: Upload Artifacts
         if: success()
         uses: actions/upload-artifact@v3
