@@ -53,8 +53,8 @@ jobs:
         with:
           name: macos-release
           path: |
-            src-tauri/target/release/bundle/dmg/*.dmg  # Upload only .dmg files (adjust this if your app is packaged differently)
-            src-tauri/target/release/bundle/app/*.app  # Upload only .app files (if applicable)
+            src-tauri/target/release/bundle/dmg/**  # Upload only .dmg files (adjust this if your app is packaged differently)
+            src-tauri/target/release/bundle/macos/**  # Upload only .app files (if applicable)
 
       - name: Create Release
         if: success()
@@ -76,5 +76,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # Use the upload_url from the create_release step
           asset_path: src-tauri/target/release/bundle/dmg/*.dmg # Path to the dmg file
-          asset_name: app.dmg # You can change this to the desired name for the dmg file
+          asset_name: founding_mothers.dmg # You can change this to the desired name for the dmg file
           asset_content_type: application/octet-stream
