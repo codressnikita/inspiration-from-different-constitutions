@@ -59,8 +59,7 @@ jobs:
         with:
           name: macos-release
           path: |
-            src-tauri/target/release/bundle/dmg/**  # Upload only .dmg files (adjust this if your app is packaged differently)
-            src-tauri/target/release/bundle/macos/**  # Upload only .app files (if applicable)
+            ./src-tauri/target/release/bundle/dmg/founding-mothers_1.0.3_aarch64.dmg
 
       - name: Create Release
         if: success()
