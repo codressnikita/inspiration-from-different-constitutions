@@ -6,7 +6,6 @@ on:
       - "v*" # Trigger workflow only when tags like 'v1.0.0', 'v2.0', etc. are pushed
 permissions:
   contents: write
-  releases: write
   packages: write # Needed if you're going to publish packages
 
 jobs:
