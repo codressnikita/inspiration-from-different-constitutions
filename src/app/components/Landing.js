@@ -11,7 +11,14 @@ const Landing = ({ isFocused = false, handleVideoClick }) => {
     <div className="overflow-y-auto h-[calc(100vh-50px)]">
       {" "}
       {/* Adjust height to allow scrolling */}
-      <Hero isFocused={isFocused} videoSrc={"/videos/video_main.mp4"} />{" "}
+      <Hero
+        isFocused={isFocused}
+        videoSrc={"/videos/video_main.mp4"}
+        overlayOpts={{
+          leftSize: { height: 60, width: 100 }, // Customize left triangle size
+          rightSize: { height: 30, width: 200 },
+        }}
+      />
       {/* Pass isFocused to Hero */}
       <div
         className={`transition-opacity duration-500 ${

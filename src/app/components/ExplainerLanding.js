@@ -8,7 +8,14 @@ const ExplainerLanding = ({ isFocused = false, video }) => {
     <div className="overflow-y-auto h-[calc(100vh-50px)]">
       {" "}
       {/* Adjust height to allow scrolling */}
-      <Hero isFocused={isFocused} videoSrc={video.src} />
+      <Hero
+        isFocused={isFocused}
+        videoSrc={video.src}
+        overlayOpts={{
+          leftSize: { height: 80, width: 300 }, // Customize left triangle size
+          rightSize: { height: 50, width: 300 },
+        }}
+      />
       {/* Pass isFocused to Hero */}
       <div
         className={`transition-opacity duration-500 ${

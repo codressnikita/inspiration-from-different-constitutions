@@ -1,7 +1,7 @@
 "use client"; // Ensure this is a client component
 
-import { useEffect, useState } from 'react';
-import Overlay from './Overlay';
+import { useEffect, useState } from "react";
+import Overlay from "./Overlay";
 
 // List of quotes
 const quotes = [
@@ -47,10 +47,7 @@ const quotes = [
   },
 ];
 
-const Screensaver = ({
-  idleTimeout = 30000,
-  quoteInterval = 5000,
-}) => {
+const Screensaver = ({ idleTimeout = 10000, quoteInterval = 5000 }) => {
   const [isIdle, setIsIdle] = useState(false);
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
 
@@ -64,14 +61,14 @@ const Screensaver = ({
       timeoutId = setTimeout(() => setIsIdle(true), idleTimeout);
     };
 
-    window.addEventListener('mousemove', resetTimer);
-    window.addEventListener('keydown', resetTimer);
+    window.addEventListener("mousemove", resetTimer);
+    window.addEventListener("keydown", resetTimer);
 
     resetTimer();
 
     return () => {
-      window.removeEventListener('mousemove', resetTimer);
-      window.removeEventListener('keydown', resetTimer);
+      window.removeEventListener("mousemove", resetTimer);
+      window.removeEventListener("keydown", resetTimer);
       clearTimeout(timeoutId);
     };
   }, [idleTimeout]);
@@ -104,7 +101,8 @@ const Screensaver = ({
           <div className="absolute bottom-5 z-20 w-full text-center px-4">
             <div className="bg-blue-500 bg-opacity-0 rounded-lg p-4">
               <p className="text-2xl font-serif italic text-yellow-300 transition-all duration-300 ease-in-out">
-                &quot;{quotes[currentQuoteIndex].text}&quot; {/* Escape quotes */}
+                &quot;{quotes[currentQuoteIndex].text}&quot;{" "}
+                {/* Escape quotes */}
               </p>
               <p className="mt-2 text-xl font-semibold text-gray-200">
                 - {quotes[currentQuoteIndex].author}

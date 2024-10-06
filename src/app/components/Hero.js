@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Overlay from "./Overlay";
 
-const Hero = ({ videoSrc, isFocused }) => {
+const Hero = ({ videoSrc, isFocused, overlayOpts = {} }) => {
   // Accept isFocused as a prop
   const [overlayOpacity, setOverlayOpacity] = useState(0); // Start with 0 opacity
 
@@ -36,6 +36,7 @@ const Hero = ({ videoSrc, isFocused }) => {
         animateOut={isFocused} // Set animateOut to true if isFocused is true
         animationDuration={1}
         mainOpacity={overlayOpacity + 0.2} // Set the overlay opacity based on scroll
+        {...overlayOpts}
       />
     </section>
   );
