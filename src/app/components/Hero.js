@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import Overlay from './Overlay';
+import { useEffect, useState } from "react";
+import Overlay from "./Overlay";
 
-const Hero = () => {
+const Hero = ({ videoSrc, isFocused }) => {
+  // Accept isFocused as a prop
   const [overlayOpacity, setOverlayOpacity] = useState(0); // Start with 0 opacity
 
   const handleScroll = () => {
@@ -13,10 +14,10 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll); // Listen for scroll events
+    window.addEventListener("scroll", handleScroll); // Listen for scroll events
 
     return () => {
-      window.removeEventListener('scroll', handleScroll); // Clean up event listener
+      window.removeEventListener("scroll", handleScroll); // Clean up event listener
     };
   }, []);
 
@@ -24,17 +25,17 @@ const Hero = () => {
     <section className="hero-section fixed inset-0 h-screen overflow-hidden">
       <video
         className="w-full h-full object-cover"
-        src="/videos/video_main.mp4"
+        src={videoSrc}
         autoPlay
         loop
         muted
         playsInline
       />
-      <Overlay 
-        animateIn={true} 
-        animateOut={false} 
+      <Overlay
+        animateIn={!isFocused} // Set animateIn to false if isFocused is true
+        animateOut={isFocused} // Set animateOut to true if isFocused is true
         animationDuration={1}
-        mainOpacity= {overlayOpacity + 0.2} // Set the overlay opacity based on scroll
+        mainOpacity={overlayOpacity + 0.2} // Set the overlay opacity based on scroll
       />
     </section>
   );
