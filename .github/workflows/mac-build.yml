@@ -6,7 +6,6 @@ on:
       - "v*" # Trigger workflow only when tags like 'v1.0.0', 'v2.0', etc. are pushed
 permissions:
   contents: write
-  packages: write # Needed if you're going to publish packages
 
 jobs:
   tauri-build-mac:
@@ -47,9 +46,6 @@ jobs:
       - name: Build the App
         run: npm run tauri build
 
-      - name: Wait for files
-        run: sleep 5
-
       - name: Upload Artifacts
         if: success()
         uses: actions/upload-artifact@v3
@@ -58,27 +54,27 @@ jobs:
           path: |
             ./src-tauri/target/release/bundle/dmg/*.dmg
 
-      - name: Create Release
-        if: success()
-        id: create_release # Set an ID to reference the outputs
-        uses: actions/create-release@v1
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: |
-            Automated release for version ${{ github.ref }}.
-          draft: false
-          prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Create Release
+      #   if: success()
+      #   id: create_release # Set an ID to reference the outputs
+      #   uses: actions/create-release@v1
+      #   with:
+      #     tag_name: ${{ github.ref }}
+      #     release_name: Release ${{ github.ref }}
+      #     body: |
+      #       Automated release for version ${{ github.ref }}.
+      #     draft: false
+      #     prerelease: false
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload Release Assets
-        if: success()
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # Use the upload_url from the create_release step
-          asset_path: ./src-tauri/target/release/bundle/dmg/founding-mothers_1.0.3_aarch64.dmg # Path to the dmg file
-          asset_name: founding-mothers_1.0.3_aarch64.dmg # You can change this to the desired name for the dmg file
-          asset_content_type: application/octet-stream
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Upload Release Assets
+      #   if: success()
+      #   uses: actions/upload-release-asset@v1
+      #   with:
+      #     upload_url: ${{ steps.create_release.outputs.upload_url }} # Use the upload_url from the create_release step
+      #     asset_path: ./src-tauri/target/release/bundle/dmg/founding-mothers_1.0.3_aarch64.dmg # Path to the dmg file
+      #     asset_name: founding-mothers_1.0.3_aarch64.dmg # You can change this to the desired name for the dmg file
+      #     asset_content_type: application/octet-stream
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
