@@ -91,7 +91,7 @@ const Screensaver = ({ idleTimeout = 10000, quoteInterval = 5000 }) => {
           {/* Video background */}
           <video
             className="w-full h-full object-cover"
-            src="/videos/video1.mp4"
+            src="/screensaver.mp4"
             autoPlay
             loop
             muted
