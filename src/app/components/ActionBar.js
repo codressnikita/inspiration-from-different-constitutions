@@ -1,49 +1,20 @@
-import { Eye, ChevronsLeft } from "lucide-react";
+"use client";
+import { ChevronsLeft } from "lucide-react";
 
-export default function ActionBar({
-  isLandingFocused,
-  isExplainerFocused,
-  selectedVideo,
-  handleLandingWatchFull,
-  handleExplainerWatchFull,
-  handleBackAction,
-}) {
+export default function ActionBar({ showConstituents, backFromConstituent }) {
   let leftButton = null;
   let rightButton = null;
 
-  if (selectedVideo) {
-    if (isExplainerFocused) {
-      leftButton = {
-        text: "Back",
-        icon: ChevronsLeft,
-        onClick: handleBackAction,
-      };
-    } else {
-      leftButton = {
-        text: "Back",
-        icon: ChevronsLeft,
-        onClick: handleBackAction,
-      };
-      rightButton = {
-        text: "Watch Explainer",
-        icon: Eye,
-        onClick: handleExplainerWatchFull,
-      };
-    }
-  } else {
-    if (isLandingFocused) {
-      leftButton = {
-        text: "Back",
-        icon: ChevronsLeft,
-        onClick: handleBackAction,
-      };
-    } else {
-      rightButton = {
-        text: "Watch full Video",
-        icon: Eye,
-        onClick: handleLandingWatchFull,
-      };
-    }
+  if (showConstituents) {
+    leftButton = {
+      text: "Back",
+      icon: ChevronsLeft,
+      onClick: backFromConstituent,
+    };
+  }
+
+  if (!leftButton && !rightButton) {
+    return null;
   }
 
   return (
