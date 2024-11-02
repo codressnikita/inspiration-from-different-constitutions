@@ -1,11 +1,16 @@
 // components/DocumentViewer.js
 import React, { useState, useEffect } from "react";
 import Modal from "./Modal"; // Adjust path if necessary
+import { useScreensaverContext } from "../ScreensaverContext"; // Adjust path if necessary
 
 const DocumentViewer = ({ document, onClose }) => {
+  const { setScreensaverDisabled } = useScreensaverContext();
   const [fileContent, setFileContent] = useState(null);
 
   useEffect(() => {
+    // Disable screensaver when component mounts
+    setScreensaverDisabled(true);
+
     const fetchDocument = async () => {
       try {
         const response = await fetch(document.path);
@@ -22,23 +27,21 @@ const DocumentViewer = ({ document, onClose }) => {
 
     fetchDocument();
 
-    // Clean up the object URL on component unmount
+    // Clean up on component unmount: re-enable screensaver and revoke object URL
     return () => {
+      setScreensaverDisabled(false);
       if (fileContent) {
         URL.revokeObjectURL(fileContent);
       }
     };
-  }, [document]);
+  }, [document, setScreensaverDisabled]);
 
   if (!fileContent) return null; // Don't render until content is loaded
 
   return (
     <Modal onClose={onClose}>
       <div className="flex flex-col h-full">
-        {/* Fixed header with height of 50px */}
         <h2 className="text-lg font-bold p-4 h-[50px]">{document.name}</h2>
-
-        {/* Document container with max-height set to calc(100vh - 50px) */}
         <div
           className="flex-grow overflow-hidden"
           style={{ maxHeight: "calc(100vh - 50px)" }}

@@ -1,7 +1,7 @@
 "use client"; // Ensure this is a client component
 
 import { useEffect, useState } from "react";
-import Overlay from "./Overlay";
+import { useScreensaverContext } from "../ScreensaverContext";
 
 // List of quotes
 const quotes = [
@@ -47,7 +47,9 @@ const quotes = [
   },
 ];
 
-const Screensaver = ({ idleTimeout = 100000, quoteInterval = 5000 }) => {
+const Screensaver = ({ idleTimeout = 15000, quoteInterval = 5000 }) => {
+  const { screensaverDisabled, setScreensaverDisabled } =
+    useScreensaverContext();
   const [isIdle, setIsIdle] = useState(false);
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
 
@@ -84,6 +86,8 @@ const Screensaver = ({ idleTimeout = 100000, quoteInterval = 5000 }) => {
     }
   }, [isIdle, quoteInterval]);
 
+  if (screensaverDisabled) return null;
+
   return (
     <>
       {isIdle && (
@@ -91,24 +95,23 @@ const Screensaver = ({ idleTimeout = 100000, quoteInterval = 5000 }) => {
           {/* Video background */}
           <video
             className="w-full h-full object-cover"
-            src="/screensaver.mp4"
+            src="./screensaver.mp4"
             autoPlay
             loop
             muted
             playsInline
           />
-          <Overlay animate />
-          <div className="absolute bottom-5 z-20 w-full text-center px-4">
+          {/* <Overlay animate /> */}
+          {/* <div className="absolute bottom-5 z-20 w-full text-center px-4">
             <div className="bg-blue-500 bg-opacity-0 rounded-lg p-4">
               <p className="text-2xl font-serif italic text-yellow-300 transition-all duration-300 ease-in-out">
                 &quot;{quotes[currentQuoteIndex].text}&quot;{" "}
-                {/* Escape quotes */}
               </p>
               <p className="mt-2 text-xl font-semibold text-gray-200">
                 - {quotes[currentQuoteIndex].author}
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       )}
     </>
