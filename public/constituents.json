@@ -4,8 +4,24 @@
     "name": "A. Dharam Dass",
     "bio": "A. Dharam Dass was a member of the Constituent Assembly from United Provinces. He was also a member of the Rajya Sabha for two terms between 1952 and 1960.",
     "image": "",
-    "videos": [],
-    "documents": []
+    "videos": [
+      {
+        "name": "Parliamentary Debate - 21 May 2023",
+        "path": "/videos/parliamentry_debate_21-may-2023.mp4",
+        "type": "mp4",
+        "size": "9.4 MB",
+        "thumbnail": ""
+      }
+    ],
+    "documents": [
+      {
+        "name": "Document 1",
+        "path": "/archive/Archive_1.pdf",
+        "type": "pdf",
+        "size": "9.4 MB",
+        "thumbnail": "/we_the_people.jpg"
+      }
+    ]
   },
   {
     "id": "constituent_2",
@@ -475,14 +491,6 @@
     "id": "constituent_60",
     "name": "Damodar Swarup Seth",
     "bio": "Damodar Swarup Seth was born in February 1896 in Bareilly, Uttar Pradesh. He completed his education at Government High School and Reid Christian College in Lucknow. A prominent figure in the Indian freedom struggle, Seth was arrested multiple times, notably for his involvement in the 1925 Kakori Conspiracy Case. He held key roles in various political organisations, including the All India Congress Committee, and served as Secretary of the Congress Socialist Party in 1935 and President of the UP Congress Committee in 1946. Elected to the Constituent Assembly from the United Provinces on a Congress ticket, Seth focused on Fundamental Rights and advocated for a new Constituent Assembly.",
-    "image": "",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "id": "constituent_61",
-    "name": "Brijlal Nandlal Biyani",
-    "bio": "Brijlal Nandlal Biyani was an Indian freedom fighter and writer, popularly known as Vidarbha Kesari. Influenced by Mahatma Gandhi, Biyani participated actively in the Non-Cooperation Movement, the Civil Disobedience Movement, and the Quit India Movement, facing imprisonment four times. He was elected to the Constituent Assembly from Central Provinces & Berar. In recognition of his contributions, the Brijlal Biyani Science College in Amravati was named after him, and the Government of India issued a postage stamp in his honour in 2002.",
     "image": "",
     "videos": [],
     "documents": []

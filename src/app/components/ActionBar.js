@@ -1,7 +1,15 @@
 "use client";
-import { ChevronsLeft } from "lucide-react";
+import { ArchiveIcon, ChevronsLeft, Users2Icon } from "lucide-react";
 
-export default function ActionBar({ showConstituents, backFromConstituent }) {
+export default function ActionBar({
+  showConstituents,
+  showArchive,
+  backFromConstituent,
+  backFromArchive,
+  handleArchiveClick,
+  handleConstituentClick,
+  className,
+}) {
   let leftButton = null;
   let rightButton = null;
 
@@ -11,6 +19,24 @@ export default function ActionBar({ showConstituents, backFromConstituent }) {
       icon: ChevronsLeft,
       onClick: backFromConstituent,
     };
+    rightButton = {
+      text: "Switch to Archive View",
+      icon: ArchiveIcon,
+      onClick: handleArchiveClick,
+    };
+  }
+
+  if (showArchive) {
+    leftButton = {
+      text: "Back",
+      icon: ChevronsLeft,
+      onClick: backFromArchive,
+    };
+    rightButton = {
+      text: "Switch to CA Members View",
+      icon: Users2Icon,
+      onClick: handleConstituentClick,
+    };
   }
 
   if (!leftButton && !rightButton) {
@@ -18,7 +44,7 @@ export default function ActionBar({ showConstituents, backFromConstituent }) {
   }
 
   return (
-    <div className="bg-blue-600 p-2 flex justify-between">
+    <div className={`bg-blue-600 p-2 flex justify-between ${className}`}>
       {leftButton && (
         <button
           className="bg-blue-700 text-white px-4 py-1 rounded flex items-center"

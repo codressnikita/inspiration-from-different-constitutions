@@ -3,7 +3,10 @@
 
 import Hero from "./Hero";
 
-export default function Landing({ onConstituentsClick }) {
+export default function Landing({
+  handleArchiveClick,
+  handleConstituentClick,
+}) {
   return (
     <div className="relative h-screen">
       <Hero videoSrc={"/indian_parliament.mp4"} />
@@ -12,11 +15,14 @@ export default function Landing({ onConstituentsClick }) {
         <div className="flex space-x-6">
           <div
             className="bg-blue-500 text-white p-6 rounded cursor-pointer"
-            onClick={onConstituentsClick}
+            onClick={handleConstituentClick}
           >
             Constituents
           </div>
-          <div className="bg-green-500 text-white p-6 rounded cursor-pointer">
+          <div
+            className="bg-green-500 text-white p-6 rounded cursor-pointer"
+            onClick={handleArchiveClick}
+          >
             Archive
           </div>
         </div>
