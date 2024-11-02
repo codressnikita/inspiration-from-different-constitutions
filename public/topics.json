@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Fundamental Rights and Duties",
+    "videos": [
+      {
+        "name": "Parliamentary Debate - 21 May 2023",
+        "path": "/videos/parliamentry_debate_21-may-2023.mp4",
+        "type": "mp4",
+        "size": "9.4 MB",
+        "thumbnail": ""
+      }
+    ],
+    "documents": [
+      {
+        "name": "Document 1",
+        "path": "/archive/Archive_1.pdf",
+        "type": "pdf",
+        "size": "9.4 MB",
+        "thumbnail": "/we_the_people.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Environmental Sustainability",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Economic Development",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Civic Engagement",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Education Policy",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Healthcare Accessibility",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Digital Rights",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Gender Equality",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Social Justice",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Labor Rights",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Cultural Heritage",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Freedom of Speech",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Data Privacy",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Peace and Security",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Youth Empowerment",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Public Policy",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Crisis Management",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Globalization Effects",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Urban Development",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Disaster Response",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Media Literacy",
+    "videos": [],
+    "documents": []
+  }
+]

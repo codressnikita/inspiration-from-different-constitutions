@@ -2,40 +2,39 @@
 import { ArchiveIcon, ChevronsLeft, Users2Icon } from "lucide-react";
 
 export default function ActionBar({
-  showConstituents,
-  showArchive,
-  backFromConstituent,
-  backFromArchive,
-  handleArchiveClick,
-  handleConstituentClick,
+  showCountries,
+  showTopics,
+  toHome,
+  handleTopicsClick,
+  handleCountriesClick,
   className,
 }) {
   let leftButton = null;
   let rightButton = null;
 
-  if (showConstituents) {
+  if (showCountries) {
     leftButton = {
       text: "Back",
       icon: ChevronsLeft,
-      onClick: backFromConstituent,
+      onClick: toHome,
     };
     rightButton = {
-      text: "Switch to Archive View",
+      text: "Switch to Topics View",
       icon: ArchiveIcon,
-      onClick: handleArchiveClick,
+      onClick: handleTopicsClick,
     };
   }
 
-  if (showArchive) {
+  if (showTopics) {
     leftButton = {
       text: "Back",
       icon: ChevronsLeft,
-      onClick: backFromArchive,
+      onClick: toHome,
     };
     rightButton = {
-      text: "Switch to CA Members View",
+      text: "Switch to Countries View",
       icon: Users2Icon,
-      onClick: handleConstituentClick,
+      onClick: handleCountriesClick,
     };
   }
 

@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Austria",
+    "videos": [
+      {
+        "name": "Parliamentary Debate - 21 May 2023",
+        "path": "/videos/parliamentry_debate_21-may-2023.mp4",
+        "type": "mp4",
+        "size": "9.4 MB",
+        "thumbnail": ""
+      }
+    ],
+    "documents": [
+      {
+        "name": "Document 1",
+        "path": "/archive/Archive_1.pdf",
+        "type": "pdf",
+        "size": "9.4 MB",
+        "thumbnail": "/we_the_people.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Brazil",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Canada",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Denmark",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Egypt",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Finland",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Ghana",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Honduras",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "India",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Japan",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Kenya",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Mexico",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Nigeria",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Portugal",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Qatar",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Russia",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Sweden",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Turkey",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Uganda",
+    "videos": [],
+    "documents": []
+  },
+  {
+    "name": "Vietnam",
+    "videos": [],
+    "documents": []
+  }
+]

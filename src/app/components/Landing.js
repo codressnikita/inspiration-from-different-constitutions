@@ -3,27 +3,26 @@
 
 import Hero from "./Hero";
 
-export default function Landing({
-  handleArchiveClick,
-  handleConstituentClick,
-}) {
+export default function Landing({ handleTopicsClick, handleCountriesClick }) {
   return (
     <div className="relative h-screen">
       <Hero videoSrc={"/indian_parliament.mp4"} />
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
-        <h1 className="text-white text-5xl font-bold mb-8">Welcome</h1>
+        <h1 className="text-white text-3xl font-bold mb-8">
+          Learn about inspiration for Indian Constitution by:
+        </h1>
         <div className="flex space-x-6">
           <div
             className="bg-blue-500 text-white p-6 rounded cursor-pointer"
-            onClick={handleConstituentClick}
+            onClick={handleCountriesClick}
           >
-            Constituents
+            Countries
           </div>
           <div
             className="bg-green-500 text-white p-6 rounded cursor-pointer"
-            onClick={handleArchiveClick}
+            onClick={handleTopicsClick}
           >
-            Archive
+            Topics
           </div>
         </div>
       </div>
