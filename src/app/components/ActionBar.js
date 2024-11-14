@@ -1,68 +1,36 @@
 "use client";
-import { ArchiveIcon, ChevronsLeft, Users2Icon } from "lucide-react";
+import { ChevronsLeft } from "lucide-react";
 
 export default function ActionBar({
   showCountries,
   showTopics,
+  showAlternateConstitutions,
   toHome,
-  handleTopicsClick,
-  handleCountriesClick,
-  className,
 }) {
-  let leftButton = null;
-  let rightButton = null;
+  // Conditionally set the left button when needed
+  const leftButton =
+    showCountries || showTopics || showAlternateConstitutions
+      ? {
+          text: "Back",
+          icon: ChevronsLeft,
+          onClick: toHome,
+        }
+      : null;
 
-  if (showCountries) {
-    leftButton = {
-      text: "Back",
-      icon: ChevronsLeft,
-      onClick: toHome,
-    };
-    rightButton = {
-      text: "Switch to Topics View",
-      icon: ArchiveIcon,
-      onClick: handleTopicsClick,
-    };
-  }
-
-  if (showTopics) {
-    leftButton = {
-      text: "Back",
-      icon: ChevronsLeft,
-      onClick: toHome,
-    };
-    rightButton = {
-      text: "Switch to Countries View",
-      icon: Users2Icon,
-      onClick: handleCountriesClick,
-    };
-  }
-
-  if (!leftButton && !rightButton) {
+  // Return null if no button should be rendered
+  if (!leftButton) {
     return null;
   }
 
   return (
-    <div className={`bg-blue-600 p-2 flex justify-between ${className}`}>
-      {leftButton && (
-        <button
-          className="bg-blue-700 text-white px-4 py-1 rounded flex items-center"
-          onClick={leftButton.onClick}
-        >
-          {leftButton.icon && <leftButton.icon className="h-5 w-5 mr-2" />}
-          {leftButton.text}
-        </button>
-      )}
-      <div className="flex-grow" />
-      {rightButton && (
-        <button
-          className="bg-blue-700 text-white px-4 py-1 rounded flex items-center"
-          onClick={rightButton.onClick}
-        >
-          {rightButton.icon && <rightButton.icon className="h-5 w-5 mr-2" />}
-          {rightButton.text}
-        </button>
-      )}
+    <div className="fixed bottom-6 left-6 z-50">
+      <button
+        className="bg-white text-gray-700 px-5 py-3 rounded-full flex items-center shadow-2xl hover:shadow-3xl transition-shadow duration-300 transform hover:scale-105 text-lg font-semibold"
+        onClick={leftButton.onClick}
+      >
+        <leftButton.icon className="h-6 w-6 mr-2" />
+        {leftButton.text}
+      </button>
     </div>
   );
 }

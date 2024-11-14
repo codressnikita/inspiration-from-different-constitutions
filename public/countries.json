@@ -1,118 +1,72 @@
 [
   {
-    "name": "Austria",
-    "videos": [
-      {
-        "name": "Parliamentary Debate - 21 May 2023",
-        "path": "/videos/parliamentry_debate_21-may-2023.mp4",
-        "type": "mp4",
-        "size": "9.4 MB",
-        "thumbnail": ""
-      }
-    ],
-    "documents": [
-      {
-        "name": "Document 1",
-        "path": "/archive/Archive_1.pdf",
-        "type": "pdf",
-        "size": "9.4 MB",
-        "thumbnail": "/we_the_people.jpg"
-      }
-    ]
+    "name": "Australia",
+    "content": "The provision for a concurrent list in the Constitution of India is adapted from the Constitution of Australia. Further, the Australian Constitution, 1900, had a provision that allowed for duty-free movement of goods between provinces. This provision was borrowed and taken further by making trade duty-free throughout the “territory of India”. It also came to include trade within the states themselves. \n\n - Concurrent List (Both the Union government as well as the State governments can frame laws on the subjects that feature in the concurrent list) \n\n - Freedom of trade, commerce and Inter-course (freedom of the movement of commodities and flow of commercial transactions) \n\n - Joint sitting of the Houses of the Parliament \n\n \n\n",
+    "did_you_know": "- “Countries which have adopted Federalism at a later date have attempted to reduce the disadvantages following from the rigidity and legalism which are inherent therein. The example of Australia may well be referred to in this matter. The Australian Constitution has adopted the following means to make its federation less rigid: (1) By conferring upon the Parliament of the Commonwealth large powers of concurrent Legislation and few powers of exclusive Legislation (2) By making some of the Articles of the Constitution of a temporary duration to remain in force only “until Parliament otherwise provides.” - Dr B. R. Ambedkar, CAD, 4 November 1948  \n\n “Like the Australian Constitution, it has a long list of subjects for concurrent powers of legislation. Under the Australian Constitution, concurrent subjects are 39. Under the Draft Constitution they are 37. Following the Australian Constitution there are as many as six Articles in the Draft Constitution, where the provisions are of a temporary duration and which could be replaced by Parliament at anytime by provisions suitable for the occasion.” - B. R. Ambedkar \n\n “Like the Australian Constitution, it has a long list of subjects for concurrent powers of legislation. Under  the Australian Constitution, concurrent subjects are 39. Under the Draft Constitution they are 37. Following the Australian Constitution there are as many as six Articles in the Draft Constitution, where the provisions are of a temporary duration and which could be replaced by Parliament at anytime by provisions suitable for the occasion. The biggest advance made by the Draft Constitution over the Australian Constitution is in the matter of exclusive powers of legislation vested in Parliament. While the exclusive authority of the Australian Parliament to legislate extends only to about 3 matters, the authority of the Indian Parliament as proposed in the Draft Constitution will extend to 91 matters. In this way the Draft Constitution has secured the greatest possible elasticity in its federalism which is supposed to be rigid by nature.” - Dr B. R. Ambedkar, CAD, 4 November 1948\n\n\n",
+    "image": "./archive_inspirations/Australian.jpg",
+    "image_source": "Commonwealth of Australia "
   },
   {
-    "name": "Brazil",
-    "videos": [],
-    "documents": []
+    "name": "United Kingdom",
+    "content": "Following the colonisation of India, the British introduced a “modern” legal system supplanting the indigenous legal traditions. The British common law tradition had a deep influence on the future Constitution of India. The adoption of a bicameral legislature, the role of the Prime Minister, and the establishment of a parliamentary democracy illustrate the Constitution makers’ appreciation for the functional strengths of the British constitutional system. \n - Bicameralism (system of government where the legislature consists of two legislative chambers or Houses) \n - Cabinet System (a form of government where real power is vested in a body of ministers) \n - First past the post system (method of election where the candidate with more votes than all other candidates is declared elected) \n - Institution of the Speaker \n - Legislative Procedure (process of law making) \n - Parliamentary form of government (a form of government based on the principle of collective leadership with the Prime Minister as its head) \n - Parliamentary Privileges (powers, rights, and immunities enjoyed by the Parliament and its members) \n - Prerogative Writs (the Supreme Court and high courts can issue writs in case of violation of an individual’s Fundamental Rights and direct the Executive to act or not to act in particular ways) \n - The idea of the Rule of Law (all laws apply equally to all and no one is above the law)\n",
+    "did_you_know": "“Under the Draft Constitution the President occupies the same position as the King under the English Constitution. He is the head of the State but not of the Executive. He represents the Nation but does not rule the Nation. He is the symbol of the nation. His place in the administration is that of a ceremonial device on a seal by which the nation’s decisions are made known.” - Dr B. R. Ambedkar, 4 November 1948\n\n",
+    "image": "",
+    "image_source": ""
   },
   {
     "name": "Canada",
-    "videos": [],
-    "documents": []
+    "content": "With regard to the relationship between the Union and the states, India was to be a federation on the lines of Canada. Similar to Canada, the powers not allocated to the states belong to the Union under the Constitution of India. Further, it contains provisions relating not only to the Centre but also to the governance of the units resembling the Canadian model. \n - Advisory Jurisdiction of the Supreme Court \n - Appointment of Governors of states by the Centre \n - Quasi-federal system (Federation with a strong Centre) \n - Residuary powers vested in the Centre (power vested in the Parliament to make laws on subjects not mentioned in the State and Concurrent lists)\n",
+    "did_you_know": "- “The Federation is, however, of the Canadian type rather than of the American or Australian; for, the powers not allocated to the units belong, as in Canada, to the Centre, whereas in Australia and the United States of America the powers not granted to the Centre remain with the units. In another respect also the Indian Constitution resembles the Canadian for it contains provisions relating not only to the Constitution of the Centre but also to the Constitution of the units, whereas Constitutions of Australia and of the United States of America hardly deal with the government of the States.” - Sir B. N. Rau \n \n - “The High Courts and the Supreme Court form one single integrated Judiciary having jurisdiction and providing remedies in all cases arising under the constitutional law, the civil law or the criminal law. This is done to eliminate all diversity in all remedial procedure. Canada is the only country which  furnishes a close parallel.” - Dr B. R. Ambedkar, CAD, 4 November 1948\n\n\n",
+    "image": "./archive_inspirations/Canadian Constitution.jpg",
+    "image_source": "Parliamentary Archives"
   },
   {
-    "name": "Denmark",
-    "videos": [],
-    "documents": []
+    "name": "United States of America",
+    "content": "The American model of democracy significantly influenced the Constitution of India, particularly its emphasis on individual rights and the establishment of a written constitution. The Fundamental Rights enshrined in Part III were directly inspired by the American Bill of Rights, demonstrating the framers’ commitment to safeguarding individual liberties. The Preamble of the Constitution, which reflects the spirit of the document, begins with the words, “We, the People''—drawing from the precedent set by the constitution of the United States of America. \n - Charter of Fundamental Rights \n - Impeachment of the President \n - Independence of Judiciary \n - Judicial Review (power of the Supreme Court and the High Courts to examine the constitutionality of laws) \n - Post of Vice President \n - Removal of Supreme Court and High Court judges\n",
+    "did_you_know": "- “The Draft Constitution is, Federal Constitution inasmuch as it establishes what may be called a Dual Polity. This Dual Polity under the proposed Constitution will consist of the Union at the Centre and the States at the periphery each endowed with sovereign powers to be exercised in the field assigned to them respectively by the Constitution. This dual polity resembles the American Constitution.” - Dr B. R. Ambedkar, CAD, 4 November 1948 \n\n - “The  new Indian Constitution has, however, preferred to follow the example of the United States of America and to enact something corresponding to the American Bill of Rights although with certain necessary reservations. The rights can be enforced through the ordinary courts of law and, in the last resort, through the Supreme Court of the Union. There are the usual provisions regarding equality before the law, personal liberty, freedom of speech and expression, freedom of assembly and association, freedom of movement  and freedom of religion.” - Sir B.N. Rau\n",
+    "image": "./archive_inspirations/Constitution_of_the_United_States,_page_1.jpg",
+    "image_source": "National Archives and Records Administration"
   },
   {
-    "name": "Egypt",
-    "videos": [],
-    "documents": []
+    "name": "France",
+    "content": "The ideals of the French Revolution—liberty, equality, and fraternity—resonated throughout the debates of the Constituent Assembly. These principles were enshrined in the Preamble of the Constitution, serving as guiding ideals for the nation's democratic journey. The framers sought to create a constitutional philosophy that encompassed not only legal frameworks but also moral and ethical values. \n - Republic (a form of government where citizens elect representatives to govern the state) \n - Ideals of liberty, equality, and fraternity in the Preamble\n",
+    "did_you_know": " “..It is a landmark in the Indian renaissance, and a symbol of progress in political thought. The French slogan of liberty, equality and fraternity, brought about a revolution in human minds and carried the torch of freedom far and wide. That great nation laid the foundation of modern democracy in their own country and supported it in other freedom- loving countries. Their magnificent gift of the statue of liberty, presented to the American nation bears testimony to their love of freedom. The Americans, with their characteristic thoroughness, have treasures it and installed it on one of the islands on the south of New York, and it has become the object of great attraction to the visitor. The world cannot remain static, and with the development of the human mind, there is the evolution of political ideals as well. We have gone beyond the French conception of democracy and added justice to their trio, and given it the first place in the Preamble to our Constitution.” - Hyder Husein, CAD, 23 November 1949\n",
+    "image": "./archive_inspirations/French Constitution.png",
+    "image_source": "Archives Nationales"
   },
   {
-    "name": "Finland",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Ghana",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Honduras",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "India",
-    "videos": [],
-    "documents": []
+    "name": "Ireland",
+    "content": "The Constitution of the Irish Free State in 1921 included a list of Fundamental Rights which inspired the leaders of the Indian freedom movement. The Constitution of Ireland of 1937 had a distinction between the “fundamental rights”  and the “directive principles of social policy.” The latter were excluded from the purview of the courts. B. N. Rau, the Constitutional Adviser, had referred to the Irish Constitution and recommended the classification of the rights into two parts, one dealing with fundamental principles of state policy and another with fundamental rights. The provisions for the Upper House of Parliament were also adapted from the Irish Constitution. \n - Directive Principles of State Policy (policy guidelines included in the Constitution which cannot be enforced by the judiciary) \n - Fundamental Rights \n - Election of President \n - Nomination of members to the Upper House\n",
+    "did_you_know": "",
+    "image": "./archive_inspirations/irishc.png",
+    "image_source": ""
   },
   {
     "name": "Japan",
-    "videos": [],
-    "documents": []
+    "content": "The Constitution of India under Article 21 states: “No one shall be deprived of his life or personal liberty unless in accordance with the procedure established by law.” This provision was borrowed from Article 34 of the Constitution of Japan. \n - Procedure established by Law\n",
+    "did_you_know": "- “As regards why the original words “without due process of law” were omitted and the present words “except according to procedure established by law” are inserted, the reason is stated to be that the expression is more definite and such a provision finds place in article 31 of the Japanese Constitution of 1946.” - Mahboob Ali Baig, CAD, 6 December 1948\n",
+    "image": "./archive_inspirations/Japan Constitution.jpg",
+    "image_source": "Wikimedia Commons"
   },
   {
-    "name": "Kenya",
-    "videos": [],
-    "documents": []
+    "name": "South Africa",
+    "content": "The provisions for amendment of the Constitution and elected members of the Upper House were adapted from the South Africa Act, 1909. \n - Amendment of Constitution \n - Elected members of the Upper House \n",
+    "did_you_know": "",
+    "image": "./archive_inspirations/South_Africa_Act_1909_first_page.png",
+    "image_source": "Parliament of the United Kingdom"
   },
   {
-    "name": "Mexico",
-    "videos": [],
-    "documents": []
+    "name": "The Union of Soviet Socialist Republics (USSR)",
+    "content": "The influence of the Soviet Constitution on the Indian Constitution is evident in the incorporation of the ideal of justice within its Preamble. Initially, the Constitution of India did not include any provisions for Fundamental Duties. The concept of Fundamental Duties was first introduced in the USSR, which was the pioneer to introduce such provisions in its constitution. It was not until the 42nd Amendment in 1976 that the Constitution of India introduced the idea of Fundamental Duties for its citizens. \n - Fundamental Duties (a set of moral obligations towards the nation defined in the Constitution) \n - Preamble (Ideal of justice) \n",
+    "did_you_know": "",
+    "image": "./archive_inspirations/USSR constitution .png",
+    "image_source": "Internet Archive"
   },
   {
-    "name": "Nigeria",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Portugal",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Qatar",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Russia",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Sweden",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Turkey",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Uganda",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Vietnam",
-    "videos": [],
-    "documents": []
+    "name": "Weimar Constitution of the German Reich",
+    "content": "The Weimar Constitution of the German Reich under Article 48 empowered the President with Emergency decree powers to protect the republic in times of crises. This provision was borrowed by the makers of the Constitution of India. Further, the first part of the main clause on equality before the law was adapted from the Weimar Constitution but was widened in order to be applicable to all persons and not merely to citizens. \n - Suspension of Fundamental Rights during Emergency \n - Equality before the law\n",
+    "did_you_know": "- “The closest approximation, to my mind, is reached in the Weimar Constitution of the Third Reich which was destroyed by Hitler taking advantage of the very same provisions contained in that constitution. That Weimar Constitution of the Third Republic exists no longer and has been replaced by the Bonn Constitution. But those emergency provisions pale into insignificance when compared with the emergency provisions in this chapter of our Constitution. I urge therefore that this House should bestow its earnest consideration and mature judgement and all its wisdom on a consideration of this chapter. The chapter as it proceeds to its grand finale annuls to a very large extent even the fundamental rights conferred by part III of the Constitution. I shall deal with it anon when that article is reached; for the present we are concerned with this article 275.” - H.V. Kamath, CAD, 2 August 1949 \n\n - “My honourable Friend, Mr. Kamath quoted the Constitution of Germany, the Third Reich, but probably that he could have said about article 278 and not about this article. This does not give the Centre that power which the Weimar Constitution gave to the Centre in that Constitution. Here we have got only the essential power required to carry on the administration when there is a war on or where there is an internal insurrection. I do not think any Central Government can carry on and can defend the country if it is not armed at least with these powers.” - Shibban Lal Saxena, CAD, 2 August 1949\n",
+    "image": "./archive_inspirations/Weimar_Constitution.jpg",
+    "image_source": ""
   }
 ]

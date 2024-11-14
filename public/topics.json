@@ -1,123 +1,117 @@
 [
   {
-    "name": "Fundamental Rights and Duties",
-    "videos": [
-      {
-        "name": "Parliamentary Debate - 21 May 2023",
-        "path": "/videos/parliamentry_debate_21-may-2023.mp4",
-        "type": "mp4",
-        "size": "9.4 MB",
-        "thumbnail": ""
-      }
-    ],
+    "name": "Early expressions of liberal constitutionalism: Raja Rammohun Roy \n",
+    "description": "The earliest demands for rights and the pursuit of liberal constitutionalism began to take shape in the urban centres of Bombay, Madras, and Calcutta. A prominent voice for these aspirations was Rammohan Roy, who emerged in early 19th century Calcutta. Rammohan Roy asserted that being born within British dominions entitled him to the same privileges as the natives of Britain.",
+    "documents": [],
+    "did_you_know": ""
+  },
+  {
+    "name": "Constitution of India Bill 1895 (Swaraj Bill)",
+    "description": "The Constitution of India Bill, also known as the Swaraj Bill, was one of the earliest attempts at constitution-making in India, drafted in 1895 by an anonymous author believed to be influenced by Bal Gangadhar Tilak’s vision of Swaraj or self-government. The Bill drew inspiration from the constitutions of Brazil and the United States of America.  \n The Bill outlined a set of broad civil and political rights, including freedom of speech and expression, property rights, personal liberty, inviolability of one’s home, equality before law, equality to admission to public offices, and the right to petition for grievances. Spanning 111 provisions, the Bill also included separate chapters on the legislature, executive, and judiciary. \n Arun K. Thiruvengadam, in his book The Constitution of India: A Contextual Analysis, notes that the Bill’s classification of subjects for the Central and State legislatures resembles the List system used in the future Constitution of India. He remarks that this document, conceived over half a century before India’s independence, “anticipates many of the institutional issues that would come to dominate the imagination of the framers of the eventual Constitution.”",
+    "documents": [],
+    "did_you_know": ""
+  },
+  {
+    "name": "Madras Session of the Congress, 1914",
+    "description": "The Indian National Congress convened in Madras in 1914 and passed a resolution asserting India’s demand for equality with the self-governing Dominions in the reorganisation of the British Empire post-World War I. Proponents argued that this would affirm “the recognition of India as a component part of a federated Empire, in the full and the free enjoyment of the rights belonging to that status”. ",
     "documents": [
-      {
-        "name": "Document 1",
-        "path": "/archive/Archive_1.pdf",
-        "type": "pdf",
-        "size": "9.4 MB",
-        "thumbnail": "/we_the_people.jpg"
-      }
-    ]
+      "./archive_origins/1914 Madras Session Resolution - AICC 1st Inst. File no. 1.pdf"
+    ],
+    "did_you_know": "Since the first session of the Indian National Congress at Bombay in December 1885, delegates of the party met for three days (initially) at the end of each year to discuss and deliberate on various issues. Occasionally, special sessions were convened to discuss urgent matters."
   },
   {
-    "name": "Environmental Sustainability",
-    "videos": [],
-    "documents": []
+    "name": "Bombay Session of the Congress, 1918",
+    "description": "The British administration in India announced the gradual introduction of responsible government in August 1917. This was followed by the Montague–Chelmsford proposals, which were detailed in the Report on Indian Constitutional Reforms published in 1918. The Montague-Chelmsford Reforms provided for partial representation in the provincial legislative assemblies. \n In response to the Proposals, a special session of the Indian National Congress was convened at Bombay in August 1918. The INC demanded that the British Parliament pass a statute to include a Declaration of the Rights of the people of India as British citizens. The declaration was to guarantee equality before the law, liberty of life, property, and association, the right to bear arms, and freedom of the press. ",
+    "documents": [
+      "./archive_origins/1918 Bombay_The Special Congress.pdf",
+      "./archive_origins/National Congress - Resolutions.pdf",
+      "./archive_origins/1918_Montague on Indian Administration.pdf "
+    ],
+    "did_you_know": ""
   },
   {
-    "name": "Economic Development",
-    "videos": [],
-    "documents": []
+    "name": "Government of India Act, 1919",
+    "description": "The Montague–Chelmsford proposals were subsequently enacted into a legislation through the Government of India Act of 1919. The Act established several key features, including bicameralism, direct elections, a system of dyarchy, the creation of a public service commission, the separation of central and provincial budgets, and a limited franchise.",
+    "documents": [
+      "./archive_origins/1919 Act_The King's proclamation.pdf",
+      "./archive_origins/1919_Reforms Act.pdf",
+      "./archive_origins/1919_Government of India Act.pdf"
+    ],
+    "did_you_know": "Dyarchy refers to a system of double governance \n - Limited franchise refers to the conditions on who could vote that were existent before Universal Adult Franchise came out ."
   },
   {
-    "name": "Civic Engagement",
-    "videos": [],
-    "documents": []
+    "name": "Gandhi and the Notion of Swaraj",
+    "description": "Following the Government of India Act of 1919, Mahatma Gandhi championed the idea of Swaraj or self-governance. In 1922, he articulated Swaraj as India's ability to declare her independence if she wished. Gandhi stated, “Swaraj, therefore, will not be a free gift of the British Parliament. It will be a declaration of India’s full expression.” He emphasised that Swaraj would represent the collective will of the Indian people, expressed through their own representatives.",
+    "documents": "",
+    "did_you_know": ""
   },
   {
-    "name": "Education Policy",
-    "videos": [],
-    "documents": []
+    "name": "Commonwealth of India Bill, 1925",
+    "description": "Annie Besant and Tej Bahadur Sapru played pivotal roles in formulating the Commonwealth of India Bill in 1925, which aimed to articulate the political aspirations of the Indian populace. This Bill not only addressed political and civil rights but also underscored the importance of free primary education and gender equality. It proposed that the electorate consist of educated individuals, property owners, and taxpayers. Furthermore, the Bill also advocated for local self-governance and delineated administrative levels: village, taluk, district, province, and Centre.",
+    "documents": [
+      "./archive_origins/1925 Commonwealth Bill_FP_Times of India.pdf",
+      "./archive_origins/1927 Commonwealth Bill_Constitution For India Swaraj Measure_Times of India.pdf"
+    ],
+
+    "did_you_know": ""
   },
   {
-    "name": "Healthcare Accessibility",
-    "videos": [],
-    "documents": []
+    "name": "Nehru Report, 1928",
+    "description": "In February 1928, an All-Parties Conference convened in Delhi, followed by another in Bombay in May. The Nehru Report, drafted by Motilal Nehru and Tej Bahadur Sapru, was finalised in Lucknow in August, initiating extensive discussions and negotiations. The Nehru Report emphasised the necessity of securing fundamental human rights for the people of India and marked the first significant Indian endeavour to create a constitutional framework. It outlined both central and provincial subjects but called for Dominion Status rather than complete independence, while advocating for universal suffrage for all adults, regardless of gender. \n Political scientist Niraja Gopal Jayal stated that the Nehru Report “prefigured the Indian Constitution of 1950 in several important ways.” It provided for parliamentary government and a definition of citizenship. Under Article 3 of the Report, anyone who was born or naturalised, or was the child of a father who was born or naturalised, within the territorial limits of the “Commonwealth of India” was to be a citizen. A citizen of a foreign country could become a citizen of India only after renouncing the citizenship of the country of origin. According to Jayal, the “more striking aspect of the Nehru Report is its delineation of Fundamental Rights.” These included the rights to personal liberty, equality before the law, freedom of association, freedom of conscience, freedom of speech,  the separation of the state and religion, and a set of social and economic rights, like equal rights of citizenship for men and women; the right to free elementary education without any distinction of caste or creed, and freedom of combination and association for the maintenance and improvement of labour and economic conditions for people of all occupations.",
+    "documents": [
+      "./archive_origins/1928 Letter relating to Nehru Report - AP-9.pdf",
+      "./archive_origins/1928 Nehru Report News Piece.pdf",
+      "./archive_origins/1928 Nehru_An epoch making document.pdf",
+      "./archive_origins/Nehru_ANOTHER DRAFT CONSTITUTION_7 Aug 1928_Times of India.pdf"
+    ],
+    "did_you_know": ""
   },
   {
-    "name": "Digital Rights",
-    "videos": [],
-    "documents": []
+    "name": "Declaration of Purna Swaraj",
+    "description": "In a significant shift from its previous stance on Dominion Status, the Indian National Congress, led by Jawaharlal Nehru, convened in Lahore in 1929 and put forth the demand for ‘Purna Swaraj’ or full independence for India. This marked a pivotal moment in the Indian independence movement, as the Congress declared 26 January 1930, as Independence Day. On the day, citizens were encouraged to pledge their commitment to the struggle for complete independence.",
+    "documents": ["./archive_origins/1930_Significance of Purna Swaraj.pdf"],
+    "did_you_know": "The Independence Day Pledge, 26 January 1930\n\n\n\"We believe that it is the inalienable right of the Indian people, as of any other people, to have freedom and to enjoy the fruits of their toil and have the necessities of life, so that they may have full opportunities of growth. We believe also that if any government deprives a people of these rights and oppresses them, the people have a further right to alter it or to abolish it. The British Government in India has not only deprived the Indian people of their freedom but has based itself on the exploitation of the masses, and has ruined India economically, politically, culturally, and spiritually. We believe, therefore, that India must sever the British connection and attain Purna Swaraj or Complete Independence.”\n"
   },
   {
-    "name": "Gender Equality",
-    "videos": [],
-    "documents": []
+    "name": "The Karachi Resolution, 1931 ",
+    "description": "The Karachi Session of the Indian National Congress in 1931 marked a significant milestone in shaping independent India’s Constitution.  \n Read an excerpt from the Karachi Resolution - \n “Swaraj as conceived by the Congress should include real economic freedom of the masses.\nThe Congress declares that no constitution will be acceptable to it unless it provides or enables the Swaraj Government to provide for:\n1. Freedom of expression, association and meeting.\n\n 2. Freedom of religion.\n\n 3. Protection of all cultures and languages.\n\n 4. All citizens shall be equal before the law.\n\n 5. No disability in employment or trade or profession on account of religion, caste or sex.\n\n 6. Equal rights and duties for all in regard to public wells, schools, etc.\n\n 7. All to have right to bear arms in accordance with regulations.\n\n 8. No person to be deprived of property or liberty except in accordance with law.\n\n 9. Religious neutrality of the State.\n\n10. Adult Suffrage.\n\n11. Free compulsory primary education.\n\n12. No titles to be conferred.\n\n13. Capital punishment to be abolished.\n\n14. Freedom of movement for every citizen of India and right to settle and acquire property in any part thereof, and equal protection of law.\n\n15. Proper standard of life for industrial workers and suitable machinery for settlement of disputes between employers and workers and protection against old age, sickness, etc.\n\n16. All labour to be free from conditions of serfdom.\n\n17. Special protection of women workers.\n\n18. Children not to be employed in mines and factories.\n\n19. Rights of peasants and workers to form unions.\n\n20. Reform of system of land revenue and tenure and rent, exempting rent and revenue for uneconomical holdings and reduction of dues payable for smaller holdings.\n\n21. Inheritance tax on graduated scale.\n\n22. Reduction of military expenditure by at least half.\n\n23. No servant of State ordinarily to be paid above Rs 500 per month.\n\n24. Abolition of Salt tax.\n\n25. Protection of indigenous cloth against competition of foreign cloth.\n\n26. Total prohibition of intoxicating drinks and drugs.\n\n27. Currency and exchange in national interest.\n\n28. Nationalisation of key industries and services, railways, etc.\n\n29. Relief of agricultural indebtedness and control of usury.\n\n30. Military training for citizens.” \n In an interesting commentary on the reception to the Karachi Resolution, Niraja Gopal Jayal pointed out that: “The very fact that the Resolution was received with alarm in quarters as diverse as the colonial state and Indian industry suggests that, despite its modest program, it represented a threat to important sections of dominant interests. The significance of these declarations of fundamental rights may lie more in their symbolic announcement of intent, signaled by the title of the Karachi Resolution and its twinning of fundamental rights with economic change.\" \n\n",
+    "documents": ["./archive_origins/1931_The Karachi Congress.pdf"],
+    "did_you_know": "Most of the rights listed in the Nehru Report and the Karachi Resolution were included in Parts III and IV of the Constitution of India. The only exception was the constitutional right to bear arms."
   },
   {
-    "name": "Social Justice",
-    "videos": [],
-    "documents": []
+    "name": "Poona Pact,1932 ",
+    "description": "At the second Round Table Conference, a significant conflict arose between Mahatma Gandhi and Dr B.R. Ambedkar regarding Ambedkar’s demand for separate electorates for the Depressed Classes. When the British government agreed to this demand, Gandhi responded by initiating a fast unto death. He argued that separate electorates for the Depressed Classes would hinder their integration into society. Ultimately, Ambedkar conceded to Gandhi's viewpoint, leading to the signing of the Poona Pact in September 1932. This agreement provided reserved seats for the Depressed Classes, later referred to as Scheduled Castes, in both provincial and central legislative councils, with the stipulation that these seats would be filled by voting from the general electorate.",
+    "documents": [
+      "./archive_origins/1932 Poona Pact_Govt accept Pact.pdf",
+      "./archive_origins/1932 Poona Pact_Text of agreement.pdf"
+    ],
+    "did_you_know": ""
   },
   {
-    "name": "Labor Rights",
-    "videos": [],
-    "documents": []
+    "name": "M. N. Roy's Demand for a Constituent Assembly ",
+    "description": "In 1934, M. N. Roy, a revolutionary leader and a prominent Communist leader, introduced the concept of an Indian Constituent Assembly for the first time. His proposal served as a manifestation of political agency and a form of protest against colonial rule",
+    "documents": ["./archive_origins/M.N. Roy Press Clipping S.No. 1.pdf"],
+    "did_you_know": ""
   },
   {
-    "name": "Cultural Heritage",
-    "videos": [],
-    "documents": []
+    "name": "The Government of India Act, 1935",
+    "description": "As the national struggle for independence intensified and reached its zenith, the colonial government sought to implement reforms through the Government of India Act of 1935. The Act introduced provincial autonomy, leading to the announcement of elections to the provincial legislatures in 1937. \n The Government of India Act of 1935 significantly shaped the future constitution of India. Key elements of the Constitution of India, such as the federal structure, judiciary, governors, emergency powers, public service commissions, and various administrative details, were derived from this Act. \n Later, during the Constituent Assembly debates, the borrowings from the Government of India Act of 1935 came under criticism from members of the Assembly. In defence of these borrowed elements, Dr B. R. Ambedkar remarked, “There is nothing to be ashamed of in borrowing. It involves no plagiarism. Nobody holds any patent rights in the fundamental ideas of a Constitution. What I am sorry about is that the provisions taken from the Government of India Act, 1935, relate mostly to the details of administration. I agree that administrative details should have no place in the Constitution. I wish very much that the Drafting Committee could see its way to avoid their inclusion in the Constitution.",
+    "documents": [
+      "./archive_origins/GOI Act 1935.pdf",
+      "./archive_origins/1935_Government of India Bill.pdf",
+      "./archive_origins/1935 GOI_New Constitution Act.pdf"
+    ],
+    "did_you_know": ""
   },
   {
-    "name": "Freedom of Speech",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Data Privacy",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Peace and Security",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Youth Empowerment",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Public Policy",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Crisis Management",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Globalization Effects",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Urban Development",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Disaster Response",
-    "videos": [],
-    "documents": []
-  },
-  {
-    "name": "Media Literacy",
-    "videos": [],
-    "documents": []
+    "name": "Sapru Committee, 1945",
+    "description": "The Sapru Committee, appointed by the Standing Committee of the Non-Party Conference in 1944, was tasked with examining the communal question and proposing solutions to protect minority rights in the face of rising tensions. The committee, led by Tej Bahadur Sapru, published its report titled “Constitutional Proposals of the Sapru Committee” in December 1945. The report emphasised the need to safeguard minority interests and included recommendations on the composition and powers of the constitution-making body, key principles for the new constitution, the structure of the union legislature and distribution of power, the judiciary, defence, fundamental rights, a minorities commission, and the process for amending the constitution.",
+    "documents": [
+      "./archive_origins/1945 Sapru_India's Future constitution.pdf",
+      "./archive_origins/1945 Sapru_India's future constitution.pdf",
+      "./archive_origins/1945 Sapru_Steps to end Deadlock.pdf",
+      "./archive_origins/19450404_Sapru Proposals.pdf"
+    ],
+    "did_you_know": ""
   }
 ]

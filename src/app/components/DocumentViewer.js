@@ -3,7 +3,15 @@ import React, { useState, useEffect } from "react";
 import Modal from "./Modal"; // Adjust path if necessary
 import { useScreensaverContext } from "../ScreensaverContext"; // Adjust path if necessary
 
+const getFilenameFromPath = (path) => {
+  const start =
+    path.indexOf("./archive_origins/") + "./archive_origins/".length;
+  const end = path.lastIndexOf(".pdf");
+  return path.substring(start, end);
+};
+
 const DocumentViewer = ({ document, onClose }) => {
+  const docName = getFilenameFromPath(document);
   const { setScreensaverDisabled } = useScreensaverContext();
   const [fileContent, setFileContent] = useState(null);
 
@@ -13,7 +21,7 @@ const DocumentViewer = ({ document, onClose }) => {
 
     const fetchDocument = async () => {
       try {
-        const response = await fetch(document.path);
+        const response = await fetch(document);
         if (!response.ok) {
           throw new Error("Failed to fetch document.");
         }
@@ -41,24 +49,12 @@ const DocumentViewer = ({ document, onClose }) => {
   return (
     <Modal onClose={onClose}>
       <div className="flex flex-col h-full">
-        <h2 className="text-lg font-bold p-4 h-[50px]">{document.name}</h2>
+        <h2 className="text-lg font-bold p-4 h-[50px]">{docName}</h2>
         <div
           className="flex-grow overflow-hidden"
           style={{ maxHeight: "calc(100vh - 50px)" }}
         >
-          {document.type === "pdf" ? (
-            <iframe
-              src={fileContent}
-              className="w-full h-full"
-              title={document.name}
-            />
-          ) : (
-            <img
-              src={fileContent}
-              alt={document.name}
-              className="w-full h-auto object-contain"
-            />
-          )}
+          <iframe src={fileContent} className="w-full h-full" title={docName} />
         </div>
       </div>
     </Modal>

@@ -3,19 +3,35 @@ import VideoCard from "./VideoCard";
 import DocumentCard from "./DocumentCard";
 import DocumentViewer from "./DocumentViewer";
 import VideoViewer from "./VideoViewer";
-import { Globe, Video, FileText } from "lucide-react";
+import { Globe, Lightbulb } from "lucide-react";
 
 const OneCountry = ({ country }) => {
-  const [selectedDocument, setSelectedDocument] = useState(null);
-  const [selectedVideo, setSelectedVideo] = useState(null);
-
   return (
-    <div className="bg-gray-100 relative p-8 h-full w-full rounded-lg shadow-inner">
+    <div className="bg-gray-100 relative p-8 h-full w-full overflow-y-auto">
       {!country ? (
         <div className="flex flex-col items-center justify-center text-center text-gray-600 h-full">
-          {/* Placeholder icon and text */}
           <Globe className="w-16 h-16 text-gray-400 mb-4" />
-          <p className="text-lg font-semibold">
+          {/* <p className="text-sm leading-relaxed">
+            “One likes to ask whether there can be anything new in a
+            Constitution framed at this hour in the history of the world. More
+            than hundred years have rolled over when the first written
+            Constitution was drafted. It has been followed by many countries
+            reducing their Constitutions to writing. What the scope of a
+            Constitution should be has long been settled. Similarly, what are
+            the fundamentals of a Constitution are recognized all over the
+            world. Given these facts, all Constitutions in their main provisions
+            must look similar. The only new things, if there can be any, in a
+            Constitution framed so late in the day are the variations made to
+            remove the faults and to accommodate it to the needs of the
+            country.”
+          </p> */}
+
+          {/* Author attribution */}
+          {/* <p className="text-right text-sm italic">
+            - Dr. B. R. Ambedkar, CAD, 4 November 1948
+          </p> */}
+          {/* Placeholder icon and text */}
+          <p className="text-lg font-semibold mt-10">
             Select a country to view details
           </p>
           <p className="text-sm text-gray-500 mt-2">
@@ -28,66 +44,42 @@ const OneCountry = ({ country }) => {
           <h2 className="text-3xl font-bold text-gray-700 mb-4">
             {country.name}
           </h2>
-          <p className="text-gray-700 mb-6">{country.bio}</p>
 
-          {/* Videos Section */}
-          <div className="mb-6">
-            <div className="flex items-center mb-2">
-              <Video className="w-5 h-5 mr-2 text-blue-500" />
-              <h3 className="text-xl font-semibold text-gray-800">Videos</h3>
-            </div>
-            <hr className="border-gray-300 mb-4" />
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {country.videos.length > 0 ? (
-                country.videos.map((video) => (
-                  <VideoCard
-                    key={video.name}
-                    vid={video}
-                    openVid={() => setSelectedVideo(video)}
-                  />
-                ))
-              ) : (
-                <p className="text-gray-500">No videos available.</p>
-              )}
-            </div>
+          <div className="flex flex-col justify-start align-top text-gray-700">
+            {country.content.split("\n").map((line, index) => (
+              <p key={index} className="mb-4">
+                {line}
+              </p>
+            ))}
           </div>
-
-          {/* Documents Section */}
-          <div>
-            <div className="flex items-center mb-2">
-              <FileText className="w-5 h-5 mr-2 text-purple-500" />
-              <h3 className="text-xl font-semibold text-gray-800">Documents</h3>
+          {country.did_you_know && (
+            <div className="relative text-gray-300 mb-6 p-3 rounded bg-black bg-opacity-30">
+              <Lightbulb
+                className="absolute left-3 top-4 text-yellow-400"
+                size={30}
+              />
+              {country.did_you_know.split("\n").map((line, index) => (
+                <p key={index} className="pl-10 mb-4">
+                  {line}
+                </p>
+              ))}
             </div>
-            <hr className="border-gray-300 mb-4" />
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {country.documents.length > 0 ? (
-                country.documents.map((doc) => (
-                  <DocumentCard
-                    key={doc.name}
-                    doc={doc}
-                    openDoc={() => setSelectedDocument(doc)}
-                  />
-                ))
-              ) : (
-                <p className="text-gray-500">No documents available.</p>
-              )}
-            </div>
-          </div>
-
-          {/* DocumentViewer to display selected document */}
-          {selectedDocument && (
-            <DocumentViewer
-              document={selectedDocument}
-              onClose={() => setSelectedDocument(null)}
-            />
           )}
-
-          {/* VideoViewer to display selected video */}
-          {selectedVideo && (
-            <VideoViewer
-              video={selectedVideo}
-              onClose={() => setSelectedVideo(null)}
-            />
+          {/* Image and Image Source */}
+          {country.image && (
+            <div className="mb-6">
+              <img
+                src={country.image}
+                alt={country.name}
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+              {country.image_source && (
+                <p className="text-sm text-gray-500 mt-2">
+                  <span>Source: </span>
+                  {country.image_source}
+                </p>
+              )}
+            </div>
           )}
         </>
       )}
